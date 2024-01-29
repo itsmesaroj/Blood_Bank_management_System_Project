@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <section class="sub-header">
+    <nav>
+      <h2><i class='bx bxs-donate-blood'></i><b> LifeSource</b></h2>
+      <!-- <a href="index.html"><img src="image/logo.png" alt=""></a> -->
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a> </li>
+          <li><a href="about_us.html">ABOUT</a> </li>
+          <li><a href="program.html">PROGRAM</a> </li>
+          <li><a href="Blog.html">BLOG</a> </li>
+          <li><a href="contact.html">CONTACT</a> </li>
+
+          <!-- <li><a href="">REGISTER</a> </li> -->
+          <li><a href="login.html">LOGIN</a> </li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+  </section>
+
+  <!-- login page sec. -->
+
+  <form action="login.php" method="post">
+    <div class="imgcontainer">
+      <img src="image/saroj.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="email"><b>Email</b></label>
+      <input type="email" placeholder="Enter Email" name="email">
+
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password">
+
+      <input type="submit" class="hero-btn red-btn size" value="Login" name="">
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="hero-btn red-btn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+
+
+
+  <!-- Footer section -->
+
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Contact us ,we are giving our best</p>
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-youtube"></i>
+    </div>
+    <!-- <p>TechInfinity<i class="fa fa-copyright"></i>AllRight Reserved</p> -->
+    <p>Copyright ©  SarojMehta. All rights reserved.</p>
+  </section>
+
+  <!-- javascript for toggle menu -->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+
+
+</body>
+
+</html>
